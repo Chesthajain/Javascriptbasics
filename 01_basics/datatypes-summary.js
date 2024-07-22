@@ -35,3 +35,26 @@ console.log(typeof bigNumber);
 // null - typeof is object
 //for object -> Function
 //Function return function but called as object function
+
+//+++++++++++++++++++++++++++++++
+
+// Stack(Primitive) , Heap(non-primitve)
+
+let myname = "Cherryjain"
+
+let anothername = myname
+anothername = "xyz"
+
+console.log(myname)
+console.log(anothername)
+
+let userOne = {
+    email:"xyz@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "abc@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
